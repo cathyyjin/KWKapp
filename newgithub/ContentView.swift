@@ -28,6 +28,12 @@ struct ContentView: View {
                           Text("Resource")
                               .padding(.vertical)
                       }
+                NavigationLink(destination: StudyTipPage()
+                      .font(.headline)) {
+                          Text("study tips")
+                              .padding(.vertical)
+                      }
+                
                 
                      
             }
