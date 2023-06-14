@@ -17,7 +17,7 @@ struct ProfileSettingPage: View {
                 .font(.largeTitle)
                 .fontWeight(.heavy)
             Spacer()
-            Text("Enter Your Name")
+            Text("Enter Your Name!")
                 .font(.title)
                 .fontWeight(.semibold)
             
