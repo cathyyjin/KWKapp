@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationStack{
             VStack {
                 
-                Text("This is home page.")
+                Text("This is home page!")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.black)
