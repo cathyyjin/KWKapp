@@ -8,36 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        NavigationStack{
-            VStack {
-                
-                Text("This is home page!")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.black)
-               
+        TabView{
+                    HousePage()
+                        .tabItem(){
+                            Image (systemName:"house")
+                        }
                     
-               NavigationLink(destination: PhotoPage()
-                     .font(.headline)) {
-                         Text("Photo")
-                             .padding(.vertical)
-                     }
-                NavigationLink(destination: ResourcePage()
-                      .font(.headline)) {
-                          Text("Resource")
-                              .padding(.vertical)
-                      }
-                NavigationLink(destination: StudyTipPage()
-                      .font(.headline)) {
-                          Text("study tips")
-                              .padding(.vertical)
-                      }
-                
-                
-                     
-            }
-        }
+                    PhotoPage()
+                        .tabItem(){
+                            Image(systemName:"plus")
+                        }
+                    
+            ResourcePage()
+                .tabItem(){
+                    Image(systemName:"magazine")
+                }
+        StudyTipPage()
+                 .tabItem(){
+                    Image(systemName:"pencil")
+                        }
+            ProfileSettingPage()
+                .tabItem(){
+                    Image(systemName: "person.crop.circle")
+                }
+            
+        
+                }
+            
     }
 }
 
@@ -46,3 +45,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

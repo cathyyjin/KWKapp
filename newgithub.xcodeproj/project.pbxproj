@@ -15,6 +15,7 @@
 		7393A4982A38F87F000AAD4B /* StudyTipPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A4972A38F87F000AAD4B /* StudyTipPage.swift */; };
 		7393A49A2A38F88F000AAD4B /* ProfileSettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A4992A38F88F000AAD4B /* ProfileSettingPage.swift */; };
 		7393A49C2A38F8BF000AAD4B /* PhotoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A49B2A38F8BF000AAD4B /* PhotoPage.swift */; };
+		7393A4D62A399298000AAD4B /* HousePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A4D52A399298000AAD4B /* HousePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7393A4972A38F87F000AAD4B /* StudyTipPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipPage.swift; sourceTree = "<group>"; };
 		7393A4992A38F88F000AAD4B /* ProfileSettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingPage.swift; sourceTree = "<group>"; };
 		7393A49B2A38F8BF000AAD4B /* PhotoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPage.swift; sourceTree = "<group>"; };
+		7393A4D52A399298000AAD4B /* HousePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				7393A44A2A37A750000AAD4B /* newgithubApp.swift */,
 				7393A44C2A37A750000AAD4B /* ContentView.swift */,
+				7393A4D52A399298000AAD4B /* HousePage.swift */,
 				7393A4952A38F86F000AAD4B /* ResourcePage.swift */,
 				7393A4972A38F87F000AAD4B /* StudyTipPage.swift */,
 				7393A4992A38F88F000AAD4B /* ProfileSettingPage.swift */,
@@ -151,6 +154,7 @@
 			files = (
 				7393A4982A38F87F000AAD4B /* StudyTipPage.swift in Sources */,
 				7393A49C2A38F8BF000AAD4B /* PhotoPage.swift in Sources */,
+				7393A4D62A399298000AAD4B /* HousePage.swift in Sources */,
 				7393A49A2A38F88F000AAD4B /* ProfileSettingPage.swift in Sources */,
 				7393A44D2A37A750000AAD4B /* ContentView.swift in Sources */,
 				7393A44B2A37A750000AAD4B /* newgithubApp.swift in Sources */,
