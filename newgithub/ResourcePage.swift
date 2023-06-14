@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ResourcePage: View {
     var body: some View {
-        Text("Resource Page")
+        Text("This is Resource Page")
     }
 }
 
