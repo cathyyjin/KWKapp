@@ -22,29 +22,29 @@ struct biologyPage: View {
                     .font(.title2)
                     .frame(height: 2.0)
             }
-           Spacer()
+            .padding()
             Button("Fiveable") {
                         openURL(URL(string: "https://library.fiveable.me/ap-bio")!)
                     }
-            //Spacer()
+            .padding()
             Button("Released FRQs") {
                         openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-biology/exam/past-exam-questions")!)
                     }
-            //Spacer()
+            .padding()
             Button("Bozeman Science") {
                         openURL(URL(string: "https://www.youtube.com/@Bozemanscience1")!)
                     }
-            //Spacer()
+            .padding()
             Button("2013 Practice Exam") {
                         openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-biology-practice-exam-2013.pdf?course=ap-biology")!)
                     }
-            
+            .padding()
             Button("Virtual Bio Labs ") {
                         openURL(URL(string: "https://www.biointeractive.org/classroom-resources")!)
-                    }
+                    }.padding()
             Button("Khan Academy ") {
                         openURL(URL(string: "https://www.khanacademy.org/science/ap-biology")!)
-                    }
+                    }.padding()
             
                 
                 

@@ -15,33 +15,33 @@ struct computerPage: View {
                 Text("help:")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                Text("biology")
+                Text("computer science")
                     .font(.title2)
                     .frame(height: 2.0)
             }
-           Spacer()
+            .padding()
             Button("Fiveable") {
-                        openURL(URL(string: "https://library.fiveable.me/ap-bio")!)
+                        openURL(URL(string: "https://library.fiveable.me/ap-comp-sci-a")!)
                     }
-            //Spacer()
+            .padding()
             Button("Released FRQs") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-biology/exam/past-exam-questions")!)
+                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-computer-science-a/exam/past-exam-questions")!)
                     }
-            //Spacer()
-            Button("Bozeman Science") {
-                        openURL(URL(string: "https://www.youtube.com/@Bozemanscience1")!)
+            .padding()
+            Button("AP Practice Session") {
+                        openURL(URL(string: "https://www.youtube.com/watch?v=qx0XjbHZ7IA&list=PLoGgviqq4845xKOY11PnkE7aqJC7-bYrd")!)
                     }
-            //Spacer()
-            Button("2013 Practice Exam") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-biology-practice-exam-2013.pdf?course=ap-biology")!)
+            .padding()
+            Button("Practice Exam") {
+                        openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-2020exam-sample-questions-computer-science.pdfy")!)
                     }
-            
-            Button("Virtual Bio Labs ") {
-                        openURL(URL(string: "https://www.biointeractive.org/classroom-resources")!)
-                    }
+            .padding()
+            Button("CS Labs ") {
+                        openURL(URL(string: "https://codehs.com/course/apcsalabs/overview")!)
+                    }.padding()
             Button("Khan Academy ") {
-                        openURL(URL(string: "https://www.khanacademy.org/science/ap-biology")!)
-                    }
+                        openURL(URL(string: "https://support.khanacademy.org/hc/en-us/community/posts/360069394912-AP-Computer-Science-A")!)
+                    }.padding()
             
                 
                 

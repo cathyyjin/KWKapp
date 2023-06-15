@@ -15,33 +15,29 @@ struct historyPage: View {
                 Text("help:")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                Text("biology")
+                Text("history")
                     .font(.title2)
                     .frame(height: 2.0)
             }
-           Spacer()
+            .padding()
             Button("Fiveable") {
-                        openURL(URL(string: "https://library.fiveable.me/ap-bio")!)
+                        openURL(URL(string: "https://library.fiveable.me/apush")!)
                     }
-            //Spacer()
+            .padding()
             Button("Released FRQs") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-biology/exam/past-exam-questions")!)
+                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-united-states-history/exam/past-exam-questions")!)
                     }
-            //Spacer()
-            Button("Bozeman Science") {
-                        openURL(URL(string: "https://www.youtube.com/@Bozemanscience1")!)
+            .padding()
+            Button("Heimler") {
+                        openURL(URL(string: "https://www.youtube.com/@heimlershistory")!)
                     }
-            //Spacer()
-            Button("2013 Practice Exam") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-biology-practice-exam-2013.pdf?course=ap-biology")!)
-                    }
-            
-            Button("Virtual Bio Labs ") {
-                        openURL(URL(string: "https://www.biointeractive.org/classroom-resources")!)
-                    }
+            .padding()
+            Button("Practice Exam") {
+                        openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-united-states-history-ced-practice-exam.pdf")!)
+                    }.padding()
             Button("Khan Academy ") {
-                        openURL(URL(string: "https://www.khanacademy.org/science/ap-biology")!)
-                    }
+                        openURL(URL(string: "https://www.khanacademy.org/humanities/ap-us-history")!)
+                    }.padding()
             
                 
                 

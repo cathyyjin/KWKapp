@@ -15,34 +15,31 @@ struct englishPage: View {
                 Text("help:")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                Text("biology")
+                Text("english")
                     .font(.title2)
                     .frame(height: 2.0)
             }
-           Spacer()
+            .padding()
             Button("Fiveable") {
-                        openURL(URL(string: "https://library.fiveable.me/ap-bio")!)
+                        openURL(URL(string: "https://library.fiveable.me/ap-lit")!)
                     }
-            //Spacer()
+            .padding()
             Button("Released FRQs") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-biology/exam/past-exam-questions")!)
+                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions")!)
                     }
-            //Spacer()
-            Button("Bozeman Science") {
-                        openURL(URL(string: "https://www.youtube.com/@Bozemanscience1")!)
+            .padding()
+            Button("Ms Peer Editor") {
+                        openURL(URL(string: "https://www.youtube.com/@MsPeerEditor")!)
                     }
-            //Spacer()
-            Button("2013 Practice Exam") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-biology-practice-exam-2013.pdf?course=ap-biology")!)
+            .padding()
+            Button("Practice Exam") {
+                        openURL(URL(string: "https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-english-literature-public-practice-exam-2012.pdf")!)
                     }
-            
-            Button("Virtual Bio Labs ") {
-                        openURL(URL(string: "https://www.biointeractive.org/classroom-resources")!)
-                    }
+            .padding()
             Button("Khan Academy ") {
-                        openURL(URL(string: "https://www.khanacademy.org/science/ap-biology")!)
+                        openURL(URL(string: "https://support.khanacademy.org/hc/en-us/community/posts/115000358488-AP-English-Literature-And-Language-")!)
                     }
-            
+                            .padding()
                 
                 
                 

@@ -15,33 +15,30 @@ struct calculusPage: View {
                 Text("help:")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                Text("biology")
+                Text("calculus")
                     .font(.title2)
                     .frame(height: 2.0)
             }
-           Spacer()
+            .padding()
             Button("Fiveable") {
-                        openURL(URL(string: "https://library.fiveable.me/ap-bio")!)
+                        openURL(URL(string: "https://library.fiveable.me/ap-calc")!)
                     }
-            //Spacer()
+            .padding()
             Button("Released FRQs") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-biology/exam/past-exam-questions")!)
+                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-calculus-ab/exam/past-exam-questions")!)
                     }
-            //Spacer()
-            Button("Bozeman Science") {
-                        openURL(URL(string: "https://www.youtube.com/@Bozemanscience1")!)
+            .padding()
+            Button("The Organic Chemistry Tutor") {
+                        openURL(URL(string: "https://www.youtube.com/@TheOrganicChemistryTutor")!)
                     }
-            //Spacer()
-            Button("2013 Practice Exam") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-biology-practice-exam-2013.pdf?course=ap-biology")!)
+            .padding()
+            Button("Practice Exam") {
+                        openURL(URL(string: "https://secure-media.collegeboard.org/digitalServices/pdf/ap/sample-questions-ap-calculus-ab-and-bc-exams.pdf")!)
                     }
-            
-            Button("Virtual Bio Labs ") {
-                        openURL(URL(string: "https://www.biointeractive.org/classroom-resources")!)
-                    }
+            .padding()
             Button("Khan Academy ") {
-                        openURL(URL(string: "https://www.khanacademy.org/science/ap-biology")!)
-                    }
+                        openURL(URL(string: "https://www.khanacademy.org/math/ap-calculus-ab")!)
+                    }.padding()
             
                 
                 

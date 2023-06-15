@@ -19,30 +19,30 @@ struct physicsPage: View {
                     .font(.title2)
                     .frame(height: 2.0)
             }
-           Spacer()
-           //stopped here
+            .padding()
+       
             Button("Fiveable") {
                         openURL(URL(string: "https://library.fiveable.me/ap-physics-1")!)
                     }
-            //Spacer()
+            .padding()
             Button("Released FRQs") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-biology/exam/past-exam-questions")!)
+                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-physics-1/exam/past-exam-questions")!)
                     }
-            //Spacer()
-            Button("Bozeman Science") {
-                        openURL(URL(string: "https://www.youtube.com/@Bozemanscience1")!)
+            .padding()
+            Button("Flipping Physics") {
+                        openURL(URL(string: "https://www.youtube.com/@FlippingPhysics")!)
                     }
-            //Spacer()
-            Button("2013 Practice Exam") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-biology-practice-exam-2013.pdf?course=ap-biology")!)
+            .padding()
+            Button("Practice Exam") {
+                        openURL(URL(string: "https://www.nassauboces.org/cms/lib/NY01928409/Centricity/Domain/1371/AP%201%20Practice%20Exam.pdf")!)
                     }
-            
-            Button("Virtual Bio Labs ") {
-                        openURL(URL(string: "https://www.biointeractive.org/classroom-resources")!)
-                    }
+            .padding()
+            Button("Physics Lab ") {
+                        openURL(URL(string: "https://www.pedersenscience.com/ap-physics-labs.html")!)
+                    }.padding()
             Button("Khan Academy ") {
-                        openURL(URL(string: "https://www.khanacademy.org/science/ap-biology")!)
-                    }
+                        openURL(URL(string: "https://www.khanacademy.org/science/ap-college-physics-1")!)
+                    }.padding()
             
                 
                 

@@ -15,34 +15,38 @@ struct chemistryPage: View {
                 Text("help:")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                Text("biology")
+                Text("chemistry")
                     .font(.title2)
                     .frame(height: 2.0)
             }
-           Spacer()
+            .padding()
             Button("Fiveable") {
-                        openURL(URL(string: "https://library.fiveable.me/ap-bio")!)
+                        openURL(URL(string: "https://library.fiveable.me/ap-chem")!)
                     }
-            //Spacer()
+            .padding()
             Button("Released FRQs") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-biology/exam/past-exam-questions")!)
+                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-chemistry/exam/past-exam-questions")!)
                     }
-            //Spacer()
-            Button("Bozeman Science") {
-                        openURL(URL(string: "https://www.youtube.com/@Bozemanscience1")!)
+            .padding()
+            Button("Miss Marusik") {
+                        openURL(URL(string: "https://www.youtube.com/@MissMarusik")!)
                     }
-            //Spacer()
-            Button("2013 Practice Exam") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/media/pdf/ap-biology-practice-exam-2013.pdf?course=ap-biology")!)
+            .padding()
+            Button("The Organic Chemistry Tutor") {
+                        openURL(URL(string: "https://www.youtube.com/@TheOrganicChemistryTutor")!)
                     }
+            .padding()
+            Button("Practice Exam") {
+                        openURL(URL(string: "http://haverfordalchemy.pbworks.com/w/file/fetch/75135557/Audit%20Practice%20AP%20Exam.pdf")!)
+                    }.padding()
             
-            Button("Virtual Bio Labs ") {
-                        openURL(URL(string: "https://www.biointeractive.org/classroom-resources")!)
-                    }
+            Button("Virtual Chem Labs ") {
+                        openURL(URL(string: "http://www.kentchemistry.com/APlabs/aplabs.htm")!)
+                    }.padding()
             Button("Khan Academy ") {
-                        openURL(URL(string: "https://www.khanacademy.org/science/ap-biology")!)
+                        openURL(URL(string: "https://www.khanacademy.org/science/ap-chemistry-beta")!)
                     }
-            
+            .padding()
                 
                 
                 
