@@ -13,7 +13,7 @@ struct PhotoPage: View {
         NavigationView{
             VStack{
                 if imageData.imageNote.isEmpty {
-                    Text("Add a photo!")
+                    Text("Add a photo")
                         .italic()
                         .foregroundColor(.gray)
                     
