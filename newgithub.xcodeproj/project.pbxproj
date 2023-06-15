@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35911C132A3B557A00C27792 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35911C122A3B557A00C27792 /* ImagePicker.swift */; };
+		35911C3E2A3BB02E00C27792 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35911C3D2A3BB02E00C27792 /* ImagePicker.swift */; };
+		35911C422A3BB15600C27792 /* ImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35911C412A3BB15600C27792 /* ImageDataModel.swift */; };
+		35911C452A3BB1EC00C27792 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35911C442A3BB1EC00C27792 /* HomeView.swift */; };
+		35911C472A3BB21300C27792 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35911C462A3BB21300C27792 /* NoteDetailView.swift */; };
 		7393A44B2A37A750000AAD4B /* newgithubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A44A2A37A750000AAD4B /* newgithubApp.swift */; };
 		7393A44D2A37A750000AAD4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A44C2A37A750000AAD4B /* ContentView.swift */; };
 		7393A44F2A37A752000AAD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7393A44E2A37A752000AAD4B /* Assets.xcassets */; };
@@ -27,7 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35911C122A3B557A00C27792 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		35911C3D2A3BB02E00C27792 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		35911C412A3BB15600C27792 /* ImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataModel.swift; sourceTree = "<group>"; };
+		35911C442A3BB1EC00C27792 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		35911C462A3BB21300C27792 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		7393A4472A37A750000AAD4B /* newgithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newgithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7393A44A2A37A750000AAD4B /* newgithubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newgithubApp.swift; sourceTree = "<group>"; };
 		7393A44C2A37A750000AAD4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +64,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35911C3C2A3BAFE200C27792 /* ImagePickerFeature */ = {
+			isa = PBXGroup;
+			children = (
+				35911C3D2A3BB02E00C27792 /* ImagePicker.swift */,
+			);
+			path = ImagePickerFeature;
+			sourceTree = "<group>";
+		};
+		35911C3F2A3BB0C200C27792 /* ImageData */ = {
+			isa = PBXGroup;
+			children = (
+				35911C402A3BB10A00C27792 /* Model */,
+			);
+			path = ImageData;
+			sourceTree = "<group>";
+		};
+		35911C402A3BB10A00C27792 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35911C412A3BB15600C27792 /* ImageDataModel.swift */,
+				35911C432A3BB19C00C27792 /* Views */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35911C432A3BB19C00C27792 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7393A49B2A38F8BF000AAD4B /* PhotoPage.swift */,
+				35911C442A3BB1EC00C27792 /* HomeView.swift */,
+				35911C462A3BB21300C27792 /* NoteDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7393A43E2A37A750000AAD4B = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +131,8 @@
 				7393A5182A3B886E000AAD4B /* calculusPage.swift */,
 				7393A4972A38F87F000AAD4B /* StudyTipPage.swift */,
 				7393A4992A38F88F000AAD4B /* ProfileSettingPage.swift */,
-				7393A49B2A38F8BF000AAD4B /* PhotoPage.swift */,
-				35911C122A3B557A00C27792 /* ImagePicker.swift */,
+				35911C3F2A3BB0C200C27792 /* ImageData */,
+				35911C3C2A3BAFE200C27792 /* ImagePickerFeature */,
 				7393A44E2A37A752000AAD4B /* Assets.xcassets */,
 				7393A4502A37A752000AAD4B /* Preview Content */,
 			);
@@ -181,14 +222,17 @@
 				7393A5192A3B886E000AAD4B /* calculusPage.swift in Sources */,
 				7393A49C2A38F8BF000AAD4B /* PhotoPage.swift in Sources */,
 				7393A5172A3B8858000AAD4B /* chemistryPage.swift in Sources */,
+				35911C452A3BB1EC00C27792 /* HomeView.swift in Sources */,
 				7393A4D62A399298000AAD4B /* HousePage.swift in Sources */,
 				7393A51F2A3B88B0000AAD4B /* historyPage.swift in Sources */,
-				35911C132A3B557A00C27792 /* ImagePicker.swift in Sources */,
 				7393A49A2A38F88F000AAD4B /* ProfileSettingPage.swift in Sources */,
+				35911C472A3BB21300C27792 /* NoteDetailView.swift in Sources */,
 				7393A51B2A3B8890000AAD4B /* computerPage.swift in Sources */,
 				7393A44D2A37A750000AAD4B /* ContentView.swift in Sources */,
 				7393A5212A3B88F9000AAD4B /* physicsPage.swift in Sources */,
 				7393A51D2A3B88A2000AAD4B /* englishPage.swift in Sources */,
+				35911C3E2A3BB02E00C27792 /* ImagePicker.swift in Sources */,
+				35911C422A3BB15600C27792 /* ImageDataModel.swift in Sources */,
 				7393A44B2A37A750000AAD4B /* newgithubApp.swift in Sources */,
 				7393A4962A38F86F000AAD4B /* ResourcePage.swift in Sources */,
 			);
