@@ -17,9 +17,15 @@ struct ProfileSettingPage: View {
                 .font(.largeTitle)
                 .fontWeight(.heavy)
             Spacer()
+            
+            Image("profile")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+            
             Text("Hello")
                 .font(.title)
                 .fontWeight(.semibold)
+                .offset(y: -5)
             
                  TextField("Enter Your Name", text: $username)
                 .font(.title)

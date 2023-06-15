@@ -16,7 +16,7 @@ struct ResourcePage: View {
             List{
                 ForEach(subjects, id: \.self) { subject in
                     NavigationLink{
-                        
+                        HousePage()
                         
                         
                     }

@@ -21,7 +21,7 @@ struct PhotoPage: View {
         VStack {
             Image(uiImage: selectedImage ??
                   UIImage(named: "camera")!)
-            .resizable ()
+            .resizable (resizingMode: .stretch)
             .aspectRatio(contentMode: .fit)
             
             
@@ -30,7 +30,7 @@ struct PhotoPage: View {
                 Button ("Select a Photo"){
                     self.sourceType = .photoLibrary
                     isImagePickerShowing = true
-                    
+               
                 }
                 .padding ()
                 
