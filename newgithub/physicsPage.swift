@@ -9,6 +9,12 @@ import SwiftUI
 
 struct physicsPage: View {
     @Environment(\.openURL) var openURL
+    @State private var aisStarClicked = false
+    @State private var bisStarClicked = false
+    @State private var cisStarClicked = false
+    @State private var disStarClicked = false
+    @State private var eisStarClicked = false
+    @State private var fisStarClicked = false
     var body: some View {
         VStack {
             HStack {
@@ -16,33 +22,93 @@ struct physicsPage: View {
                     .font(.largeTitle)
                     .fontWeight(.black)
                 Text("physics")
-                    .font(.title2)
+                    .font(.largeTitle)
                     .frame(height: 2.0)
+                
             }
             .padding()
-       
-            Button("Fiveable") {
-                        openURL(URL(string: "https://library.fiveable.me/ap-physics-1")!)
-                    }
+            HStack {
+                Button("Fiveable") {
+                            openURL(URL(string: "https://library.fiveable.me/ap-physics-1")!)
+                        }
+                Image(systemName: aisStarClicked ? "star.fill" : "circle.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(aisStarClicked ? .yellow : .blue)
+                            .onTapGesture {
+                                aisStarClicked.toggle()
+                            }
+            }
+
+            
             .padding()
-            Button("Released FRQs") {
-                        openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-physics-1/exam/past-exam-questions")!)
-                    }
+            HStack{
+                Button("Released FRQs") {
+                            openURL(URL(string: "https://apcentral.collegeboard.org/courses/ap-physics-1/exam/past-exam-questions")!)
+                        }
+                Image(systemName: bisStarClicked ? "star.fill" : "circle.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(bisStarClicked ? .yellow : .blue)
+                            .onTapGesture {
+                                bisStarClicked.toggle()
+                            }
+            }
+            
+            
             .padding()
-            Button("Flipping Physics") {
-                        openURL(URL(string: "https://www.youtube.com/@FlippingPhysics")!)
-                    }
+            HStack{
+                Button("Flipping Physics") {
+                            openURL(URL(string: "https://www.youtube.com/@FlippingPhysics")!)
+                        }
+                Image(systemName: cisStarClicked ? "star.fill" : "circle.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(cisStarClicked ? .yellow : .blue)
+                            .onTapGesture {
+                                cisStarClicked.toggle()
+                            }
+                
+            }
+            
             .padding()
-            Button("Practice Exam") {
-                        openURL(URL(string: "https://www.nassauboces.org/cms/lib/NY01928409/Centricity/Domain/1371/AP%201%20Practice%20Exam.pdf")!)
-                    }
+            HStack{
+                Button("Practice Exam") {
+                            openURL(URL(string: "https://www.nassauboces.org/cms/lib/NY01928409/Centricity/Domain/1371/AP%201%20Practice%20Exam.pdf")!)
+                        }
+                Image(systemName: disStarClicked ? "star.fill" : "circle.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(disStarClicked ? .yellow : .blue)
+                            .onTapGesture {
+                                disStarClicked.toggle()
+                            }
+            }
+            
+            
             .padding()
-            Button("Physics Lab ") {
-                        openURL(URL(string: "https://www.pedersenscience.com/ap-physics-labs.html")!)
-                    }.padding()
-            Button("Khan Academy ") {
-                        openURL(URL(string: "https://www.khanacademy.org/science/ap-college-physics-1")!)
-                    }.padding()
+            HStack{
+                Button("Physics Lab ") {
+                            openURL(URL(string: "https://www.pedersenscience.com/ap-physics-labs.html")!)
+                        }
+                Image(systemName: eisStarClicked ? "star.fill" : "circle.fill")
+                    .font(.system(size: 30))
+                    .foregroundColor(eisStarClicked ? .yellow : .blue)
+                    .onTapGesture {
+                        eisStarClicked.toggle()
+                    }
+            }
+            
+                .padding()
+            HStack{
+                Button("Khan Academy ") {
+                            openURL(URL(string: "https://www.khanacademy.org/science/ap-college-physics-1")!)
+                        }
+                Image(systemName: fisStarClicked ? "star.fill" : "circle.fill")
+                    .font(.system(size: 30))
+                    .foregroundColor(fisStarClicked ? .yellow : .blue)
+                    .onTapGesture {
+                        fisStarClicked.toggle()
+                    }
+            }
+            
+                .padding()
             
                 
                 

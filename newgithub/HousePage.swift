@@ -28,10 +28,10 @@ struct HousePage: View {
                     .frame(width: 800, height: 300) .offset(y:-300)
                     .blur(radius: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
                 
-                Text("Don't Ignore Your Own potential")
+                Text("Don't Ignore Your Own Potential")
                     .lineLimit(2)
                     .offset(y:-350)
-                    .font(.title3)
+                    .font(.title2)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
