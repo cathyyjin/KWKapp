@@ -8,51 +8,61 @@
 import SwiftUI
 
 struct ResourcePage: View {
-    private var listOfsubject = subjectList
-    @State var searchText = ""
-    @State var page = ""
     var body: some View {
         NavigationView{
             List{
-                ForEach(subjects, id: \.self) { subject in
-                    NavigationLink{
-                        HousePage()
-                        
-                        
-                    }
-                label:{
-                    HStack{
-                        Text(subject.capitalized)
-                        Spacer()
-                    }
-                    .padding()
-                }
-                    
-                    
-                    
-                    
-                }
+                NavigationLink(
+                    destination: biologyPage()
+                        .font(.headline)){
+                            Text("biology")
+                                .padding(.vertical)
+                        }
+                NavigationLink(
+                    destination: chemistryPage()
+                        .font(.headline)){
+                            Text("chemistry")
+                                .padding(.vertical)
+                        }
+                NavigationLink(
+                    destination: calculusPage()
+                        .font(.headline)){
+                            Text("calculus")
+                                .padding(.vertical)
+                        }
+                NavigationLink(
+                    destination: computerPage()
+                        .font(.headline)){
+                            Text("computer science")
+                                .padding(.vertical)
+                        }
+                NavigationLink(
+                    destination: englishPage()
+                        .font(.headline)){
+                            Text("english")
+                                .padding(.vertical)
+                        }
+                NavigationLink(
+                    destination: physicsPage()
+                        .font(.headline)){
+                            Text("physics")
+                                .padding(.vertical)
+                        }
+                NavigationLink(
+                    destination: historyPage()
+                        .font(.headline)){
+                            Text("history")
+                                .padding(.vertical)
+                        }
+                
+                        .navigationTitle ("help:")
+                
             }
-            .searchable(text: $searchText)
-            .navigationTitle ("help:")
-           
-            
-            
-        }
-        
-        
-    }
-    var subjects: [String]{
-        let lcSubjects = listOfsubject.map { $0.lowercased() }
-        
-        return searchText == "" ? lcSubjects : lcSubjects.filter {
-            $0.contains(searchText.lowercased())
         }
     }
-}
-
-struct ResourcePage_Previews: PreviewProvider {
-    static var previews: some View {
-        ResourcePage()
+        
+        struct ResourcePage_Previews: PreviewProvider {
+            static var previews: some View {
+                ResourcePage()
+            }
+        }
     }
-}

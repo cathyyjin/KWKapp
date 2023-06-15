@@ -17,7 +17,13 @@
 		7393A49A2A38F88F000AAD4B /* ProfileSettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A4992A38F88F000AAD4B /* ProfileSettingPage.swift */; };
 		7393A49C2A38F8BF000AAD4B /* PhotoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A49B2A38F8BF000AAD4B /* PhotoPage.swift */; };
 		7393A4D62A399298000AAD4B /* HousePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A4D52A399298000AAD4B /* HousePage.swift */; };
-		7393A4E92A3A95E1000AAD4B /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A4E82A3A95E0000AAD4B /* Subjects.swift */; };
+		7393A5152A3B883F000AAD4B /* biologyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A5142A3B883F000AAD4B /* biologyPage.swift */; };
+		7393A5172A3B8858000AAD4B /* chemistryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A5162A3B8858000AAD4B /* chemistryPage.swift */; };
+		7393A5192A3B886E000AAD4B /* calculusPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A5182A3B886E000AAD4B /* calculusPage.swift */; };
+		7393A51B2A3B8890000AAD4B /* computerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A51A2A3B8890000AAD4B /* computerPage.swift */; };
+		7393A51D2A3B88A2000AAD4B /* englishPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A51C2A3B88A2000AAD4B /* englishPage.swift */; };
+		7393A51F2A3B88B0000AAD4B /* historyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A51E2A3B88B0000AAD4B /* historyPage.swift */; };
+		7393A5212A3B88F9000AAD4B /* physicsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7393A5202A3B88F9000AAD4B /* physicsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +38,13 @@
 		7393A4992A38F88F000AAD4B /* ProfileSettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingPage.swift; sourceTree = "<group>"; };
 		7393A49B2A38F8BF000AAD4B /* PhotoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPage.swift; sourceTree = "<group>"; };
 		7393A4D52A399298000AAD4B /* HousePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePage.swift; sourceTree = "<group>"; };
-		7393A4E82A3A95E0000AAD4B /* Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
+		7393A5142A3B883F000AAD4B /* biologyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biologyPage.swift; sourceTree = "<group>"; };
+		7393A5162A3B8858000AAD4B /* chemistryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chemistryPage.swift; sourceTree = "<group>"; };
+		7393A5182A3B886E000AAD4B /* calculusPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculusPage.swift; sourceTree = "<group>"; };
+		7393A51A2A3B8890000AAD4B /* computerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = computerPage.swift; sourceTree = "<group>"; };
+		7393A51C2A3B88A2000AAD4B /* englishPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = englishPage.swift; sourceTree = "<group>"; };
+		7393A51E2A3B88B0000AAD4B /* historyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyPage.swift; sourceTree = "<group>"; };
+		7393A5202A3B88F9000AAD4B /* physicsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = physicsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +81,13 @@
 				7393A44C2A37A750000AAD4B /* ContentView.swift */,
 				7393A4D52A399298000AAD4B /* HousePage.swift */,
 				7393A4952A38F86F000AAD4B /* ResourcePage.swift */,
-				7393A4E82A3A95E0000AAD4B /* Subjects.swift */,
+				7393A5202A3B88F9000AAD4B /* physicsPage.swift */,
+				7393A51A2A3B8890000AAD4B /* computerPage.swift */,
+				7393A51C2A3B88A2000AAD4B /* englishPage.swift */,
+				7393A51E2A3B88B0000AAD4B /* historyPage.swift */,
+				7393A5142A3B883F000AAD4B /* biologyPage.swift */,
+				7393A5162A3B8858000AAD4B /* chemistryPage.swift */,
+				7393A5182A3B886E000AAD4B /* calculusPage.swift */,
 				7393A4972A38F87F000AAD4B /* StudyTipPage.swift */,
 				7393A4992A38F88F000AAD4B /* ProfileSettingPage.swift */,
 				7393A49B2A38F8BF000AAD4B /* PhotoPage.swift */,
@@ -158,13 +176,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7393A5152A3B883F000AAD4B /* biologyPage.swift in Sources */,
 				7393A4982A38F87F000AAD4B /* StudyTipPage.swift in Sources */,
+				7393A5192A3B886E000AAD4B /* calculusPage.swift in Sources */,
 				7393A49C2A38F8BF000AAD4B /* PhotoPage.swift in Sources */,
+				7393A5172A3B8858000AAD4B /* chemistryPage.swift in Sources */,
 				7393A4D62A399298000AAD4B /* HousePage.swift in Sources */,
+				7393A51F2A3B88B0000AAD4B /* historyPage.swift in Sources */,
 				35911C132A3B557A00C27792 /* ImagePicker.swift in Sources */,
 				7393A49A2A38F88F000AAD4B /* ProfileSettingPage.swift in Sources */,
-				7393A4E92A3A95E1000AAD4B /* Subjects.swift in Sources */,
+				7393A51B2A3B8890000AAD4B /* computerPage.swift in Sources */,
 				7393A44D2A37A750000AAD4B /* ContentView.swift in Sources */,
+				7393A5212A3B88F9000AAD4B /* physicsPage.swift in Sources */,
+				7393A51D2A3B88A2000AAD4B /* englishPage.swift in Sources */,
 				7393A44B2A37A750000AAD4B /* newgithubApp.swift in Sources */,
 				7393A4962A38F86F000AAD4B /* ResourcePage.swift in Sources */,
 			);
