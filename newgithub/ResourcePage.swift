@@ -10,17 +10,27 @@ import SwiftUI
 struct ResourcePage: View {
     private var listOfsubject = subjectList
     @State var searchText = ""
-    
+    @State var page = ""
     var body: some View {
         NavigationView{
             List{
                 ForEach(subjects, id: \.self) { subject in
+                    NavigationLink{
+                        
+                        
+                        
+                    }
+                label:{
                     HStack{
                         Text(subject.capitalized)
                         Spacer()
-                        Image(systemName: "book.fill")
                     }
                     .padding()
+                }
+                    
+                    
+                    
+                    
                 }
             }
             .searchable(text: $searchText)
