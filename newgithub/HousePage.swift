@@ -9,12 +9,28 @@ import SwiftUI
 
 struct HousePage: View {
     var body: some View {
-        Text("homepage!!!!!!!!!!")
-    }
-}
-
-struct HousePage_Previews: PreviewProvider {
-    static var previews: some View {
-        HousePage()
+        ZStack {
+            Image("Sage-background")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                
+                Image("Title").aspectRatio(contentMode: .fit).frame(width: -5.0) .offset(y: -200)
+                
+                Text("Don't Ignore Your Own potential") .offset(y:-225)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                
+                
+            }
+        }}
+    struct HousePage_Previews: PreviewProvider {
+        static var previews: some View {
+            HousePage()
+        }
     }
 }
