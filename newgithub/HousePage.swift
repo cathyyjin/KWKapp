@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HousePage: View {
+    
+ //   func buttonPressed (){
+ //       print("button pressed")
+ //   }
+    
     var body: some View {
         
         
@@ -21,28 +26,27 @@ struct HousePage: View {
             
             VStack {
                 
-                Image("LOGO 1")
-                   // .offset(y: -250)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 800, height: 300) .offset(y:-300)
-                    .blur(radius: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                Image("Logo")
                 
                 Text("Don't Ignore Your Own Potential")
-                    .lineLimit(2)
-                    .offset(y:-350)
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
-                    .blur(radius: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                    .font(.title3)
+                    .padding()
                 
+                
+                Image("Animal")
+                    .padding()
                 
             }
-        }}
-    struct HousePage_Previews: PreviewProvider {
-        static var previews: some View {
-            HousePage()
         }
     }
 }
+
+
+
+//IPHONE VIEW
+struct HousePage_Previews: PreviewProvider {
+    static var previews: some View {
+        HousePage()
+    }
+}
+
