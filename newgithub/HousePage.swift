@@ -25,8 +25,10 @@ struct HousePage: View {
             
             
             VStack {
-                
                 Image("Logo")
+                    .resizable()
+                    .scaledToFit()
+                
                 
                 Text("Don't Ignore Your Own Potential")
                     .font(.title3)

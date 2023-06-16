@@ -19,6 +19,7 @@ struct ProfileSettingPage: View {
                 .frame(minWidth: 0, maxWidth:.infinity)
                 .edgesIgnoringSafeArea(.all)
             
+            
             VStack{
                 
                 Text("\(SavedName)")
@@ -31,7 +32,7 @@ struct ProfileSettingPage: View {
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 300, height: 300)
-                    .offset(y: -100)
+                    .offset(y: -90)
                 
                 Text("Hello Scholar")
                     .font(.title)
